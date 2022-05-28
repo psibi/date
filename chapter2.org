@@ -1,0 +1,6 @@
+* Context Matter
+
+- In software, make sure to preserve context using better types.
+- Some context for date and time:
+  - UTC for DateTime
+  - DateTimeOffset instead of storing local time.
