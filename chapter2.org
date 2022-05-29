@@ -37,18 +37,27 @@
 * Perspective
 
 - Unspecified Perspective
-  - Example ~2013-12-31 22:00:00~
-  - Could be local time.
+  - Example ~2013-12-31 10:00:00~
+  - Could be local time, but we should avoid making such assumptions.
+  - It could be useful for "floating times". Could refer to 10'o clock
+    local time for anytime zone. (Useful for television show
+    broadcast). It's time value doesn't change when you use it in
+    other time zone.
 - Universal Perspective
   - Example ~2013-12-31 16:00:00 UTC~
   - Instead of ~UTC~ above, it's also specified as ~GMT~ or marked by
     a letter ~Z~ which stands for Zulu time. Zulu time is just a
     military way of specifying GMT.
   - It's completely unambiguos. Represents a fixed moment of time
-    regardless of time zones.
+    regardless of any time zones.
 - Local Perspective (Sibi: Todo - Go through the video again)
   - By Offset (~2013-12-31 22:00:00 -06:00~)
+    - Offset to UTC is mentioned
   - By Time Zone (~2013-12-31 22:00:00 Central~)
+    - Good to know background information about [[https://www.timeanddate.com/time/zones/ct][Central Time]].
   - By Time Zone Segment (~2013-12-31 22:00:00 CST~)
-- By Time Zone & Offset
-  - Example ~2013-12-31 22:00:00 -06:00 Central~
+    - CST: Central Standard time
+    - Recommendation: Avoid time zone abbreviations when storing
+      inside computer. (Fine to show it in UI, but not recommended otherwise)
+  - By Time Zone & Offset
+    - Example ~2013-12-31 22:00:00 -06:00 Central~
