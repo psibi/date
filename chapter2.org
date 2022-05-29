@@ -61,3 +61,5 @@
       inside computer. (Fine to show it in UI, but not recommended otherwise)
   - By Time Zone & Offset
     - Example ~2013-12-31 22:00:00 -06:00 Central~
+
+* Calender Time
