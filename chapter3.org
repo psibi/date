@@ -1,0 +1,31 @@
+* Time Zones
+
+** What is a Time Zone
+
+- A Time Zone is a Geographic Region.
+  - Follows the same local clock.
+  - Abides by the sdame set of timekeeping rules.
+  - Usually determined by Law.
+- A Time Zone is NOT an offset.
+  - Offsets are only a part of a time zone.
+  - More than one offset might apply, at different parts of the year.
+- Defines the configuration of local clocks.
+  - Covers all time within the region.
+- Has a common or legal name. Eg: IST
+- Has a standard offset from UTC.
+- Includes Daylight Saving Time Rules.
+  - Transition Date patterns.
+  - Transition Times
+  - Transition Amount (1 hour etc)
+- Includes History of Changes (like git!)
+  - DST Rules
+  - Offsets
+  - Alignments: that occur by each time zone transitioning by a
+    fractional amount to line up with UTC. (Alignments are offset
+    changes but done with the intention of aligning with UTC)
+- Time Zones are set by Governments.
+  - Expect Suprises and Oddities.
+  - Changes Occur Often
+- Reason for Time Zone Changes
+  - Trade/Commerce
+  - Religious Observations

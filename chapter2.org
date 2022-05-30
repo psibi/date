@@ -63,3 +63,21 @@
     - Example ~2013-12-31 22:00:00 -06:00 Central~
 
 * Calender Time
+
+- It's a position on a calender or a clock.
+- Use cases:
+  - Future scheduled events. It's best to use this instead of UTC
+    timestamp because your events might run at wrong time after a
+    Daylight saving transition.
+
+* Instantaneous Time
+
+- Can use date and time in UTC to refer to a particular instant.
+- Use cases:
+  - Recording past events
+  - Future Absolute Events
+  - Calculations
+    - Adding or subtracing time
+    - Determining duration between them
+    - Recommendation: If you are planning to perform computation in
+      date time, best to convert to UTC before performing them.
