@@ -6,6 +6,10 @@ default:
 build:
     fd --type file --extension org | awk 'BEGIN { FS="."} {print $1}' | xargs -I {} pandoc --to=commonmark {}.org -o src/{}.md
 
+# Serve book
+serve:
+    mdbook serve
+
 # Clean markdown files
 clean:
     rm docs/*.md
