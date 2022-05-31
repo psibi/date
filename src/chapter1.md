@@ -1,5 +1,9 @@
 # Date and Time Fundamentals
 
+All the notes here are from Matt Johnson's course in PluralSight on
+[Date and Time
+fundamentals](https://www.pluralsight.com/courses/date-time-fundamentals).
+
 # The Human Problem
 
 -   Clocks and calendars are human devices.
