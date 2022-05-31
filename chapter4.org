@@ -101,5 +101,49 @@
 
 ** Time Span Format
 
+- No standard
 - Similar to Time of Day, but for Elapsed time
 - HH:MM:SS.fffffff
+
+** ISO 8601 Duration Formats
+
+- Uses
+  - Calender based periods
+  - Elapsed duration of time
+  - Computed Values
+- Examples:
+  - P3Y: Period of 3 years.
+  - P5M: 5 months
+  - P8W: 8 weeks
+  - P15D: 15 calender days
+- Elapsed time periods
+  - PT36H: 36 hours
+    - Extra capital T
+  - PT90M: 90 minutes
+  - PT2S: 2 seconds
+- Compound Value examples
+  - P3Y5M8W15DT36H90M2.576S
+    - T in middle, separates date and minutes.
+
+** JSON Date Formats
+
+- JSON = JavaScript Object Notation
+- Does not define a date format.
+- Options:
+  - ISO 8601 Extended Format
+  - Unix time
+  - ASP.NET Format
+    - Example: ~/Date(1388453025123)/~
+    - The number is Unix time in milliseconds.
+    - Created by Microsoft.
+- Recommendation: Use ISO 8601 Format
+
+** XML Date formats
+
+- XML does not define a date format.
+- XSD uses the ISO 8601 Extended format.
+- Types:
+  - xsd:date
+  - xsd:time
+  - xsd:dateTime
+  - xsd:duration
