@@ -9,7 +9,7 @@ build:
 
 # Serve book
 serve:
-    mdbook serve
+    mdbook serve --dest-dir ./docs
 
 # Clean markdown files
 clean:
