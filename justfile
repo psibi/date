@@ -4,6 +4,7 @@ default:
 
 # Generate chapters
 build:
+    cp -r images src/
     fd --type file --extension org | awk 'BEGIN { FS="."} {print $1}' | xargs -I {} pandoc --to=commonmark {}.org -o src/{}.md
 
 # Serve book

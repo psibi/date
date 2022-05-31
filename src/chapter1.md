@@ -62,17 +62,17 @@
 
 -   Local time advances forward
     -   Usually by 1 hour
--   [Sprint forward transition](images/sprint_forward_transition.png)
+-   ![](./images/sprint_forward_transition.png)
 -   Creates a "gap" of missing local time.
--   [Graph between UTC and local time](images/sft_graph.png)
+-   ![](./images/sft_graph.png)
 
 ## Fall Back Transition
 
 -   Local time rewinds backwards
     -   Usually by 1 hour
--   [Fall back transition](images/fall_back_transition.png)
+-   ![](./images/fall_back_transition.png)
 -   Creates an "overlap" of ambiguous local time.
--   [Graph between UTC and local time](images/fbt_graph.png)
+-   ![](./images/fbt_graph.png)
 
 Software recommendation: If you are going to record value in terms of
 local time, then you must also include the offset from UTC so that
